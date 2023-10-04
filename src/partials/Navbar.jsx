@@ -32,7 +32,7 @@ export default function NavbarPar(){
                         </nav>
                     </div>
                     <div className="gap-2  items-center flex flex-row">
-                        <Link to="auth/login">
+                        <Link to="/auth/login">
                             <div className="border border-brown-500 p-1 hover:text-white hover:bg-brown-500 px-6 rounded-3xl text-gray-700 ">
 
                             <h1 className="tracking-wide text-md font-semibold">SignIn </h1>

@@ -51,26 +51,26 @@ function HomePage(){
                             </div>
                             <div className="md:pt-0 md:px-0 flex flex-col h-full justify-center  ">
                                 <h1 className="font-bold text-4xl text-gray-500">We Provide Good Product and Healthy Meals</h1>
-                                <div className="flex flex-col gap-3 pt-4">
+                                <div className="flex flex-col gap-3 pt-4 ">
                                     <div className="flex gap-6 ">
                                         <BsFillCheckCircleFill size={25} color="green"/>
-                                        <p>High quality beans</p>
+                                        <p className="font-semibold text-sm text-gray-700">High quality beans</p>
                                     </div>
                                     <div className="flex gap-6">
                                         <BsFillCheckCircleFill size={25} color="green"/>
-                                        <p>High quality beans</p>
+                                        <p className="font-semibold text-sm text-gray-700">High quality beans</p>
                                     </div>
                                     <div className="flex gap-6">
                                         <BsFillCheckCircleFill size={25} color="green"/>
-                                        <p>High quality beans</p>
+                                        <p className="font-semibold text-sm text-gray-700">High quality beans</p>
                                     </div>
                                     <div className="flex gap-6">
                                         <BsFillCheckCircleFill size={25} color="green"/>
-                                        <p>High quality beans</p>
+                                        <p className="font-semibold text-sm text-gray-700">High quality beans</p>
                                     </div>
                                     <div className="flex gap-6">
                                         <BsFillCheckCircleFill size={25} color="green"/>
-                                        <p>High quality beans</p>
+                                        <p className="font-semibold text-sm text-gray-700">High quality beans</p>
                                     </div>
                                 </div>
                             </div>
