@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{ useEffect} from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useDispatch } from "react-redux";
+// slices
+import { getProducts } from './slices/productsSlice';
+// partial
+import NavbarPar from './partials/Navbar';
+// pages
+import HomePage from './pages/homePages';
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getProducts());
+  }, [dispatch]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <NavbarPar/>
+      <Routes>
+          <Route path="/" element={<HomePage />}/>
+      </Routes>
+    </BrowserRouter>
+   
   );
 }
 
