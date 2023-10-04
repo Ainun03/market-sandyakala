@@ -1,5 +1,5 @@
 import React,{Fragment} from "react";
-import ims from '../assets/images/img_car.png'
+import ims from '../assets/images/pp.jpeg'
 import {BsFillCheckCircleFill} from 'react-icons/bs'
 import {BiSolidUserCircle} from 'react-icons/bi'
 import {AiFillStar} from 'react-icons/ai'
@@ -7,9 +7,9 @@ import {AiFillStar} from 'react-icons/ai'
 import { useSelector } from "react-redux";
 
 // partials
+import NavbarPar from '../partials/Navbar';
 import CardProduct from "../partials/cardProducts/Card";
 import Footer from "../partials/Footer";
-
 
 function HomePage(){
     const {products} =useSelector(
@@ -18,8 +18,8 @@ function HomePage(){
 
     return(
         <Fragment>
+            <NavbarPar/>
             <div className="pt-20">
-                
                     <section className="1">
                         <div className="">
                             <img className="rounded-md w-full object-cover" src={ims} alt='mobil'/>
@@ -88,6 +88,7 @@ function HomePage(){
                                         products.length>0 ?
                                         products
                                         .map((items, idx)=>
+                                        
                                             <CardProduct key={idx}  item={items}/>
                                         )
                                         :""

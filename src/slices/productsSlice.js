@@ -10,9 +10,9 @@ const initialState = {
 };
 
 export const getProducts = createAsyncThunk(
-    "/api/json/v1/1/search.php?f=a",
+    "/api/json/v1/1/search.php?f=b",
     async (payload,thunkAPI) => {
-        let url=`${API_URL}/api/json/v1/1/search.php?f=a`
+        let url=`${API_URL}/api/json/v1/1/search.php?f=b`
   
         try {
             const resp = await axios.get(url); 

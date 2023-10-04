@@ -7,6 +7,10 @@ import { getProducts } from './slices/productsSlice';
 import NavbarPar from './partials/Navbar';
 // pages
 import HomePage from './pages/homePages';
+import ProductPage from './pages/productPages';
+import LoginPage from './pages/auth/LoginPage';
+import RegisterPage from './pages/auth/RegisterPage';
+import AuthPage from './pages/auth/AuthPage';
 
 function App() {
   const dispatch = useDispatch();
@@ -16,9 +20,15 @@ function App() {
   }, [dispatch]);
   return (
     <BrowserRouter>
-      <NavbarPar/>
+    {/* <NavbarPar/> */}
       <Routes>
           <Route path="/" element={<HomePage />}/>
+          <Route path="auth" element={<AuthPage />}>
+            <Route index path="login" element={<LoginPage />}/>
+            <Route path='register' element={<RegisterPage />}/>
+
+          </Route>
+          <Route path="/product" element={<ProductPage />}/>
       </Routes>
     </BrowserRouter>
    

@@ -3,7 +3,6 @@ import {AiOutlineCheck} from 'react-icons/ai'
 import ims from '../../assets/images/img_car.png'
 
 function CardProduct({item}){
-    console.log(item)
     return(
         <Fragment>
              {/* <div className="grid grid-cols-2 gap-3 md:grid-cols-3 bg-blue-200"> */}
